@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Explorer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+line-height:1.6;
+}
+
+
+/* FLOATING NAVBAR */
+
+nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:white;
+padding:12px 40px;
+border-radius:40px;
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+display:flex;
+gap:35px;
+z-index:1000;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff6600;
+}
+
+
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1469474968028-56623f02e42e");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+max-width:700px;
+}
+
+
+
+/* SEARCH BAR */
+
+.search-box{
+width:60px;
+height:60px;
+background:white;
+border-radius:50px;
+display:flex;
+align-items:center;
+overflow:hidden;
+transition:0.5s;
+}
+
+.search-box:hover{
+width:320px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+padding:10px 15px;
+width:100%;
+font-size:16px;
+}
+
+.icon{
+width:60px;
+text-align:center;
+font-size:20px;
+color:#ff6600;
+}
+
+
+
+/* DESTINATIONS */
+
+.places{
+padding:80px;
+}
+
+.places h2{
+text-align:center;
+margin-bottom:50px;
+font-size:36px;
+}
+
+.place{
+display:flex;
+gap:40px;
+margin-bottom:60px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+.place img{
+width:420px;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+transition:0.4s;
+}
+
+.place img:hover{
+transform:scale(1.05);
+}
+
+.place-info h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.place-info p{
+margin-bottom:12px;
+color:#555;
+}
+
+.tags span{
+background:#ff6600;
+color:white;
+padding:6px 10px;
+border-radius:5px;
+margin:4px;
+display:inline-block;
+font-size:14px;
+}
+
+.price{
+font-size:20px;
+color:#ff6600;
+font-weight:bold;
+margin-top:10px;
+}
+
+
+
+/* WHY CHOOSE US */
+
+.features{
+background:#fff;
+padding:70px;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:40px;
+}
+
+.feature-box{
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.feature{
+width:250px;
+padding:20px;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+border-radius:10px;
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials{
+padding:70px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.review-box{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+}
+
+.review{
+width:260px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+.contact{
+text-align:center;
+padding:70px;
+}
+
+footer{
+background:#1f1f1f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+<body>
+<nav>
+<a href="#">Home</a>
+<a href="#places">Destinations</a>
+<a href="#features">Why Us</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h1>Explore The World</h1>
+
+<p>
+Discover breathtaking destinations, exciting adventures, and unforgettable
+travel experiences across the globe.
+</p>
+
+<div class="search-box">
+<div class="icon">🔍</div>
+<input type="text" placeholder="Search destinations">
+</div>
+
+</section>
+
+<section id="places" class="places">
+
+<h2>Top Destinations</h2>
+
+
+<div class="place">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+<div class="place-info">
+
+<h3>Maldives ⭐⭐⭐⭐⭐</h3>
+
+<p>
+The Maldives is one of the most beautiful tropical destinations in the world,
+known for its crystal clear turquoise waters and white sandy beaches.
+Visitors can enjoy luxurious overwater villas, peaceful island resorts,
+and stunning sunset views across the ocean. Activities like snorkeling,
+scuba diving, and island hopping create unforgettable memories.
+</p>
+
+<div class="tags">
+<span>4 Days</span>
+<span>Luxury Resort</span>
+<span>Boat Tour</span>
+</div>
+
+<p class="price">90000</p>
+
+</div>
+
+</div>
+
+<h1>hello</h1>
+
+<div class="place reverse">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+
+<div class="place-info">
+
+<h3>Switzerland ⭐⭐⭐⭐⭐</h3>
+
+<p>
+Switzerland is famous for its breathtaking alpine landscapes and
+snow covered mountains. Travelers can experience scenic train rides,
+beautiful lakes, and charming villages surrounded by nature.
+Adventure lovers can enjoy skiing, hiking, and mountain tours
+while exploring the peaceful beauty of the Swiss Alps.
+</p>
+
+<div class="tags">
+<span>5 Days</span>
+<span>Mountain Train</span>
+<span>Luxury Hotel</span>
+</div>
+
+<p class="price">150000</p>
+
+</div>
+
+</div>
+
+
+
+<div class="place">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<div class="place-info">
+
+<h3>Bali ⭐⭐⭐⭐</h3>
+
+<p>
+Bali is a tropical paradise known for its beautiful beaches,
+green rice terraces, and ancient temples. Visitors can enjoy
+traditional Balinese culture, delicious food, and vibrant festivals.
+Adventure seekers can try surfing, diving, waterfall trekking,
+and temple tours across the island.
+</p>
+
+<div class="tags">
+<span>4 Days</span>
+<span>Temple Tour</span>
+<span>Water Sports</span>
+</div>
+
+<p class="price">85000</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="features" class="features">
+
+<h2>Why Choose Us</h2>
+
+<div class="feature-box">
+
+<div class="feature">
+<h3>Best Destinations</h3>
+<p>We carefully select the most beautiful destinations for unforgettable travel experiences.</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Packages</h3>
+<p>Enjoy luxury trips and travel packages at affordable prices.</p>
+</div>
+
+<div class="feature">
+<h3>Trusted Guides</h3>
+<p>Our professional travel guides ensure safe and memorable journeys.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="testimonials">
+
+<h2>Traveler Reviews</h2>
+
+<div class="review-box">
+
+<div class="review">
+<p>"Amazing experience and beautiful destinations. Highly recommended!"</p>
+<h4><i>-Navya.M-</i></h4>
+</div>
+
+<div class="review">
+<p>"Great travel packages and very professional service."</p>
+<h4><i>-Shaheena-</i></h4>
+</div>
+
+<div class="review">
+<p>"One of the best travel experiences of my life."</p>
+<h4><i>-Geetha-</i></h4>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: travel@explorer.com</p>
+
+<p>Phone: +91 9876547326</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Travel Explorer</p>
+
+</footer>
+
+
+</body>
+</html>
